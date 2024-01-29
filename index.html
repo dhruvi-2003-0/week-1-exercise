@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ideas for Websites</title>
+</head>
+<body>
+    <h1>Ideas for Websites</h1> 
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Idea 1')">Website Idea 1</button>
+        <button class="tablinks" onclick="openCity(event, 'Idea 2')">Website Idea 2</button>
+        <button class="tablinks" onclick="openCity(event, 'Idea 3')">Website Idea 3</button>
+        <button class="tablinks" onclick="openCity(event, 'Idea 4')">Website Idea 4</button>
+        <button class="tablinks" onclick="openCity(event, 'Idea 5')">Website Idea 5</button>
+      </div>
+      <section id="Idea 1" class="tabcontent">
+        <h2>Climate Change Awareness and Action</h2>
+        <container class="idea-container">
+            <img class="slide-in-left" src="images/idea1.png" alt="Renewable energy website">
+        <p>This website can serve as an educational and action-oriented platform on climate change. It could include interactive sections explaining the science behind climate change, its impacts on different regions of the world, and personal stories from people affected by climate events. A key feature could be an interactive carbon footprint calculator and a section dedicated to suggesting practical steps individuals and communities can take to reduce their carbon footprint.</p>
+        </container>
+    </section>
+      
+      <section id="Idea 2" class="tabcontent">
+        <h2>Local History and Cultural Heritage</h2>
+        <container class="idea-container">
+            <img class="slide-in-left" src="images/idea2.png" alt="Renewable energy website">
+        <p>This project could focus on the history and cultural heritage of a specific area, town, or community. The website can feature historical timelines, interviews with local historians, stories from older residents, and archival photographs. It could also include virtual tours of historical landmarks and explanations of local traditions and festivals, thus preserving and showcasing the area's rich heritage.</p> 
+        </container>
+    </section>
+      
+      <section id="Idea 3" class="tabcontent">
+        <h2>Mental Health Awareness for Students</h2>
+        <container class="idea-container">
+            <img class="slide-in-left" src="images/idea3.png" alt="Renewable energy website">
+        <p>Aimed at addressing the mental health challenges faced by students, this website can provide resources, tips, and personal narratives about dealing with mental health issues. Features could include a blog section for students to share their stories, a directory of professional mental health resources, self-help guides, and interactive tools like stress-relief exercises or meditation guides.</p>
+        </container>
+    </section>
+
+      <section id="Idea 4" class="tabcontent">
+        <h2>Innovations in Renewable Energy</h2>
+        <container class="idea-container">
+            <img class="slide-in-left" src="images/idea4.png" alt="Renewable energy website">
+        <p>This topic focuses on the latest developments in renewable energy. The website could include sections on different types of renewable energy (solar, wind, hydro, etc.), interviews with experts in the field, and case studies of successful renewable energy projects. Additionally, it could feature an interactive map showing renewable energy usage around the world and a section on careers in the renewable energy sector.</p>
+        </container>
+    </section>
+
+      <section id="Idea 5" class="tabcontent">
+        <h2>Food Sustainability and Local Farming</h2>
+        <container class="idea-container">
+            <img class="slide-in-left" src="images/idea5.png" alt="Renewable energy website">
+        <p>This website would explore the world of sustainable farming and locally sourced food. It could feature profiles of local farmers, information on sustainable farming practices, and tips on how consumers can make more sustainable food choices. Interactive elements might include a seasonal produce calendar, recipes using local ingredients, and a map of local farmers' markets and sustainable restaurants.</p>
+        </container>
+    </section>
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+</body>
+</html>

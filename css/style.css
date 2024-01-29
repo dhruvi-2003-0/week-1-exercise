@@ -1,0 +1,117 @@
+html {
+    background-color: lightblue;
+}
+.tab {
+    position: sticky;
+    top: 5px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tab button {
+    box-shadow: 1px 1px 10px #00000099;
+    border-radius: 43px;
+    color: white;
+    background-color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 28px;
+    transition: 0.3s;
+    font-size: 20px;
+    margin: 20px 49px;
+  }
+  
+  .tab button:hover {
+    background-color: #333333;
+  }
+
+  .tab button.active {
+    background-color: #808080;
+    box-shadow: none;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 1px #636363;
+  }
+
+  h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 5px #636363;
+  }
+
+  img{
+    width: 50%;
+    height: fit-content;
+    z-index: -1;
+  }
+
+  p {
+    margin-top: 0;
+    padding-left: 2%;
+    font-size: 60px;
+  }
+
+  .idea-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .slide-in-left {
+	-webkit-animation: slide-in-left 800ms ease-in both;
+	        animation: slide-in-left 800ms ease-in both;
+}
+
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
